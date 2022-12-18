@@ -2,19 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>kitasuna.ml/post/</loc>
-    <lastmod>2022-12-18T21:42:26+08:00</lastmod>
-  </url><url>
-    <loc>kitasuna.ml/post/test1/</loc>
-    <lastmod>2022-12-18T21:42:26+08:00</lastmod>
-  </url><url>
-    <loc>kitasuna.ml/</loc>
-    <lastmod>2022-12-18T21:42:26+08:00</lastmod>
-  </url><url>
-    <loc>kitasuna.ml/post/test/</loc>
-    <lastmod>2022-12-18T21:33:28+08:00</lastmod>
-  </url><url>
     <loc>kitasuna.ml/categories/</loc>
+    <lastmod>2022-12-18T20:17:23+08:00</lastmod>
+  </url><url>
+    <loc>kitasuna.ml/post/</loc>
     <lastmod>2022-12-18T20:17:23+08:00</lastmod>
   </url><url>
     <loc>kitasuna.ml/tags/</loc>
@@ -30,6 +21,9 @@
     <lastmod>2022-12-18T20:17:23+08:00</lastmod>
   </url><url>
     <loc>kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%BA%8C/</loc>
+    <lastmod>2022-12-18T20:17:23+08:00</lastmod>
+  </url><url>
+    <loc>kitasuna.ml/</loc>
     <lastmod>2022-12-18T20:17:23+08:00</lastmod>
   </url><url>
     <loc>kitasuna.ml/tags/%E5%AE%9E%E9%AA%8C/</loc>
