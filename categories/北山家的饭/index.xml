@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>北山家的饭 on 北山工坊</title>
-        <link>kitasuna.ml/categories/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD/</link>
+        <link>/categories/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD/</link>
         <description>Recent content in 北山家的饭 on 北山工坊</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 19 Dec 2022 20:41:25 +0800</lastBuildDate><atom:link href="kitasuna.ml/categories/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 19 Dec 2022 20:41:25 +0800</lastBuildDate><atom:link href="/categories/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>北山家的饭 其三</title>
-        <link>kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%89/</link>
+        <link>/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%89/</link>
         <pubDate>Mon, 19 Dec 2022 20:41:25 +0800</pubDate>
         
-        <guid>kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%89/</guid>
+        <guid>/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%89/</guid>
         <description>&lt;h2 id=&#34;cuisine-4-干锅土豆片&#34;&gt;Cuisine 4 干锅土豆片&lt;/h2&gt;
 &lt;h2 id=&#34;用料&#34;&gt;用料  &lt;/h2&gt;
 &lt;p&gt;土豆 1 大个
@@ -48,7 +48,7 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;上成品图
-&lt;img src=&#34;https://s2.loli.net/2022/12/19/mhKYg4oWVsLZ3fU.jpg&#34;
+&lt;img src=&#34;/https:/s2.loli.net/2022/12/19/mhKYg4oWVsLZ3fU.jpg&#34;
 	
 	
 	
@@ -63,10 +63,10 @@
         </item>
         <item>
         <title>北山家的饭 其二</title>
-        <link>kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%BA%8C/</link>
+        <link>/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%BA%8C/</link>
         <pubDate>Sun, 18 Dec 2022 20:17:23 +0800</pubDate>
         
-        <guid>kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%BA%8C/</guid>
+        <guid>/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%BA%8C/</guid>
         <description>&lt;h2 id=&#34;cuisine-3-鸡翅根炖土豆&#34;&gt;Cuisine 3 鸡翅根炖土豆&lt;/h2&gt;
 &lt;h2 id=&#34;用料&#34;&gt;用料  &lt;/h2&gt;
 &lt;p&gt;鸡翅根 8个&lt;/p&gt;
@@ -121,10 +121,10 @@
         </item>
         <item>
         <title>北山家的饭 其一</title>
-        <link>kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%80/</link>
+        <link>/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%80/</link>
         <pubDate>Thu, 15 Dec 2022 21:20:42 +0800</pubDate>
         
-        <guid>kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%80/</guid>
+        <guid>/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%80/</guid>
         <description>&lt;p&gt;作为一个极其怕麻烦的人本来我是根本不想拥有做饭这个技能的，但是爸爸做饭越来越敷衍，总拿外面卖的主食当一顿饭。（小笼包、肉夹馍等等）虽然偶尔吃吃还可以，但是家父只要发现你能吃进去这个那么你这段时间一定会隔三岔五的吃到这个东西，尤其是可以外面买到或者只需要简单加工的。这也就导致了我经常一段时间过后就会深深的厌恶上一种食物，类似于你把喜欢的歌当起床闹钟。&lt;/p&gt;
 &lt;p&gt;在忍受了这么长时间的凑合之后，有一天我终于绷不住了，这他妈的也太让人崩溃啦。于是决定自己做做看，由于我是个懒狗，这一点我对自己有清醒的认知。我决定在家里啃老的这段时间赶紧学几道菜，一方面是改善一下天天被我爸应付的食谱，&lt;del&gt;另一方面在家可以不用洗锅洗碗嘻嘻。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;总之在上述的机缘巧合之下，北山开始了他的中华小当家之旅。&lt;/p&gt;
@@ -161,7 +161,7 @@
 &lt;p&gt;注意青菜 1 分钟就好了，不要焯水太久。另外焯水时放入点盐，油，保鲜&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;下面是我的成果&lt;/strong&gt;
-&lt;img src=&#34;https://s2.loli.net/2022/12/15/rwHZnvGjpSbK3C6.jpg&#34;
+&lt;img src=&#34;/https:/s2.loli.net/2022/12/15/rwHZnvGjpSbK3C6.jpg&#34;
 	
 	
 	
@@ -219,7 +219,7 @@
 &lt;p&gt;做这个还是翻车严重的。爆香葱花的时候还是糊了一点点，这次也是等冒烟了才下的锅，不过迅速调了小火就好了。然后面疙瘩其实需要想办法让它不潮湿，外表裹上面粉，这个没什么办法只能用时间硬耗，中间有一部分我觉得我拌的蛮好的，方法是把水平均的滴在面粉上然后分开拌，这样又快拌出来的疙瘩又小，而且上粉很均匀。不过除此之外的都是灾难了，潮湿的面团放在碗里之后几乎变成了稀松的面饼。下锅时不得已一个一个揪开。加水的时候也加少了导致最后的成品过于粘稠了，变成了羹。其他的倒是没什么，面疙瘩基本上下锅之后等了两分钟就就熟了，估计是因为我下的太慢了，毕竟边下边揪小团确实浪费时间。味道倒是没得说，我觉得在现代调味料的帮助下，已经很难做出没法下口的饭菜了，对于任何一个接受过化学实验的人来说这都不应该是一件难事。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;下面是我的成果&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2022/12/15/XPjAJym4LbOSv3t.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;/https:/s2.loli.net/2022/12/15/XPjAJym4LbOSv3t.jpg&#34;
 	
 	
 	
