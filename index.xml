@@ -312,7 +312,7 @@
 </description>
         </item>
         <item>
-        <title>Archives</title>
+        <title>归档</title>
         <link>/archives/</link>
         <pubDate>Wed, 14 Dec 2022 14:25:40 +0800</pubDate>
         
@@ -320,7 +320,7 @@
         <description></description>
         </item>
         <item>
-        <title>About me</title>
+        <title>关于我</title>
         <link>/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
@@ -328,7 +328,7 @@
         <description></description>
         </item>
         <item>
-        <title>Search</title>
+        <title>搜索</title>
         <link>/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
