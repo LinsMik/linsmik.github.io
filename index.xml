@@ -6,20 +6,22 @@
         <description>Recent content on 北山工坊</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 22 Dec 2022 17:14:53 +0800</lastBuildDate><atom:link href="https://linsmik.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Test</title>
-        <link>https://linsmik.github.io/post/test/</link>
-        <pubDate>Thu, 22 Dec 2022 17:14:53 +0800</pubDate>
+        <lastBuildDate>Thu, 22 Dec 2022 19:18:26 +0800</lastBuildDate><atom:link href="https://linsmik.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>解决部署在Github Pages上图片不显示的问题</title>
+        <link>https://linsmik.github.io/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+        <pubDate>Thu, 22 Dec 2022 19:18:26 +0800</pubDate>
         
-        <guid>https://linsmik.github.io/post/test/</guid>
-        <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/LinsMik/kita-image/main/%24QR4X%5BZFET2F6%7EN_P%5D%600%5BQE.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
+        <guid>https://linsmik.github.io/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;p&gt;简单来说一句话，看看自己有没有配置config.toml里的baseUrl。如果没有的话自己每次引用的图片都是自己的域名/引用的域名，这样能找的到图片就有鬼了，肯定每次都报错404。&lt;/p&gt;
+&lt;p&gt;我还因为这个问题头疼了两天，主要是搜也搜不到，估计是很蠢的问题，也没好意思提Issue去问。&lt;/p&gt;
+&lt;p&gt;现在发现根源之后果然很蠢。主要是浏览器报错的error竟然是黄色的，在我的刻板印象里黄色的都是warning不用管的。&lt;/p&gt;
+&lt;p&gt;后来想了想本地部署的可以显示，但是远程的不行，那我看看这个报的错有什么区别呗。一对比才找到问题。&lt;/p&gt;
+&lt;p&gt;于是搜了下上面的&lt;code&gt;Error with Permissions-Policy header: Origin trial controlled feature not enabled: &#39;interest-cohort&#39;.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;找到了&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/DD_Davis/article/details/128101441&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这个博客&lt;/a&gt;就想起来前几天配置的时候为了方便不用老改CNAME，把Url删除空了，这样确实主页什么的改或者不改域名都能进了，但是图片引用上就寄了。真是服了。&lt;/p&gt;
+&lt;p&gt;不过就算配置了baseUrl这个报错也不会消失，不过能用就行了我也不想管了。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/72948207/error-with-permissions-policy-header-origin-trial-controlled-feature-not-enable&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;StackOverflow上面有说是router配置问题的&lt;/a&gt;，反正大概就还是哪个地方没写明白地址的事吧。&lt;/p&gt;
 </description>
         </item>
         <item>
