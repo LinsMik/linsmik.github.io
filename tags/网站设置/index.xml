@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>网站设置 on 北山工坊</title>
-        <link>https://linsmik.github.io/tags/%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE/</link>
+        <link>https://kitasuna.ml/tags/%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE/</link>
         <description>Recent content in 网站设置 on 北山工坊</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 22 Dec 2022 19:18:26 +0800</lastBuildDate><atom:link href="https://linsmik.github.io/tags/%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 Dec 2022 19:18:26 +0800</lastBuildDate><atom:link href="https://kitasuna.ml/tags/%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>解决部署在Github Pages上图片不显示的问题</title>
-        <link>https://linsmik.github.io/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+        <link>https://kitasuna.ml/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</link>
         <pubDate>Thu, 22 Dec 2022 19:18:26 +0800</pubDate>
         
-        <guid>https://linsmik.github.io/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+        <guid>https://kitasuna.ml/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
         <description>&lt;p&gt;简单来说一句话，看看自己有没有配置config.toml里的baseUrl。如果没有的话自己每次引用的图片都是自己的域名/引用的域名，这样能找的到图片就有鬼了，肯定每次都报错404。&lt;/p&gt;
 &lt;p&gt;我还因为这个问题头疼了两天，主要是搜也搜不到，估计是很蠢的问题，也没好意思提Issue去问。&lt;/p&gt;
 &lt;p&gt;现在发现根源之后果然很蠢。主要是浏览器报错的error竟然是黄色的，在我的刻板印象里黄色的都是warning不用管的。&lt;/p&gt;
