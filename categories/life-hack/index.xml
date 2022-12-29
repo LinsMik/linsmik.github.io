@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Life Hack on 北山工坊</title>
+        <link>https://kitasuna.ml/categories/life-hack/</link>
+        <description>Recent content in Life Hack on 北山工坊</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 29 Dec 2022 11:23:52 +0800</lastBuildDate><atom:link href="https://kitasuna.ml/categories/life-hack/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>在Word中调出手写效果</title>
+        <link>https://kitasuna.ml/post/%E5%9C%A8word%E4%B8%AD%E8%B0%83%E5%87%BA%E6%89%8B%E5%86%99%E6%95%88%E6%9E%9C/</link>
+        <pubDate>Thu, 29 Dec 2022 11:23:52 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E5%9C%A8word%E4%B8%AD%E8%B0%83%E5%87%BA%E6%89%8B%E5%86%99%E6%95%88%E6%9E%9C/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;首先，在百度上找一段文字&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;致 200 米运动员：&lt;br&gt;
+200 百米跑道虽不长，运动健儿志高扬。摸拳擦掌跃欲试，分秒必争斗志扬今天的你们英姿飒爽，今天的你们朝气蓬勃，今天的你们一马当先。相信自己，你是最棒的！不要放弃，不要气馁。&lt;br&gt;
+成功永远属于你们。运动员！加油！&lt;br&gt;
+激动的血液因今天而沸腾，平静的情绪因今天而激动。在明媚的蓝天下，在宽广的赛场上，一颗颗炽热的心为你们而跳动，一双双期待的眼神因你们而牵动。努力吧！运动健儿们，相信自己，胜利的光环将永远环绕你们！&lt;br&gt;
+生命的意义在于奋斗，青春的意义在于拼搏，我们的激情在燃烧，我们的活力在四射，在今天这激动人心的日子里，运动健儿们，请尽情发挥你们的风采本色吧。&lt;/p&gt;
+&lt;h2 id=&#34;2-在文字前加个抬头假装是大学信纸写的&#34;&gt;2. 在文字前加个抬头，假装是大学信纸写的&lt;/h2&gt;
+&lt;p&gt;蹲大下面的横线如图设置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic3.zhimg.com/v2-5bdaa4b31dcb7e6a95a2d91f3bfdad1e_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-寻找合适的字体&#34;&gt;3. 寻找合适的字体&lt;/h2&gt;
+&lt;p&gt;这里我分别用的 &lt;strong&gt;汉仪尚巍手书 W&lt;/strong&gt; 和 &lt;strong&gt;【嵐】芊柔体&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;稍微调整一下格式，如下图所示&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic3.zhimg.com/v2-3e3a29e1bdbaa5703dc90fcb1ff8367e_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;感觉已经差不多了，但灵魂问题就是，这样太整齐了，我们得想办法让文字乱一些&lt;/p&gt;
+&lt;h2 id=&#34;4-宏命令&#34;&gt;4. 宏命令&lt;/h2&gt;
+&lt;p&gt;文件 - 选项 - 信任中心 - 信任中心设置 - 启用所有宏&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-1ce4fe9a54749419c8de3dd66b583e58_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;视图 - 宏 - 创建一个宏&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-0599180fd39835eafd6b905712b20320_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;进去把代码 copy 上&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代码参考&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/20308770/answer/241699602&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;如何让打印出来的字体看起来像手写的？&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Sub 字体修改()
+&amp;#39;
+&amp;#39; 字体修改 宏
+&amp;#39;
+&amp;#39;
+Dim R_Character As Range
+
+Dim FontSize(5)
+&amp;#39;指定五种字号
+FontSize(1) = &amp;#34;16&amp;#34;
+FontSize(2) = &amp;#34;16.2&amp;#34;
+FontSize(3) = &amp;#34;16.5&amp;#34;
+FontSize(4) = &amp;#34;17&amp;#34;
+FontSize(5) = &amp;#34;17.2&amp;#34;
+
+Dim ParagraphSpace(5)
+&amp;#39;指定五种行间距
+ParagraphSpace(1) = &amp;#34;12&amp;#34;
+ParagraphSpace(2) = &amp;#34;13&amp;#34;
+ParagraphSpace(3) = &amp;#34;17&amp;#34;
+ParagraphSpace(4) = &amp;#34;9&amp;#34;
+ParagraphSpace(5) = &amp;#34;12&amp;#34;
+
+For Each R_Character In ActiveDocument.Characters
+    VBA.Randomize
+&amp;#39;字号在5种指定大小中随机选取
+    R_Character.Font.Size = FontSize(Int(VBA.Rnd * 5) + 1)
+&amp;#39;位置在1—3之间随机选取
+    R_Character.Font.Position = Int(VBA.Rnd * 3) + 1
+    R_Character.Font.Spacing = 0
+
+Next
+Application.ScreenUpdating = True
+
+For Each Cur_Paragraph In ActiveDocument.Paragraphs
+&amp;#39;行间距在5个指定值中随机选取
+    Cur_Paragraph.LineSpacing = ParagraphSpace(Int(VBA.Rnd * 5) + 1)
+    
+Next
+    Application.ScreenUpdating = True
+    
+
+
+End Sub
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;保存 - 运行&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic3.zhimg.com/v2-d89c482ba36e107a24298a9884761fce_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;回来看原文件，已经 “良莠不齐” 了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-3c490a5404d7761e2ba3121d15044dbc_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5-调整&#34;&gt;5. 调整&lt;/h2&gt;
+&lt;p&gt;如果对结果不满意，可以多运行几次宏，找到合适的一版，再微调一下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic3.zhimg.com/v2-77b4c92dadc14d2b4117f4e0a7b1201a_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;下划线格式在下拉菜单能找到详细设置，用空格延长下划线&lt;/p&gt;
+&lt;p&gt;word 默认段首空格是缩进&lt;/p&gt;
+&lt;p&gt;解决办法是在上一行倒数几个空格的地方回车，下面一段接上就可以了&lt;/p&gt;
+&lt;p&gt;(经评论提醒，可以设置取消首行缩进)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-fabd3dfd97e9ed86b7ced9a53ac987b0_b.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;6-保存&#34;&gt;6. 保存&lt;/h2&gt;
+&lt;p&gt;另存为 pdf，免得打印的时候乱了格式&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-549bce95df0ada5288f747db6571755c_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最终效果（横线粗细不一是显示的原因，放大后自动消失）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-e9ac9c91ddea0d38f042eac8b59bde88_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;当然，这种奇技淫巧可能在写反思的时候更有用吧（逃）&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
