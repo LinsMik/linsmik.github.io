@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>摄影 on 北山工坊</title>
+        <link>https://kitasuna.ml/categories/%E6%91%84%E5%BD%B1/</link>
+        <description>Recent content in 摄影 on 北山工坊</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 29 Dec 2022 10:51:49 +0800</lastBuildDate><atom:link href="https://kitasuna.ml/categories/%E6%91%84%E5%BD%B1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>佳能M50怎么上C-LOG</title>
+        <link>https://kitasuna.ml/post/%E4%BD%B3%E8%83%BDm50%E6%80%8E%E4%B9%88%E4%B8%8Ac-log/</link>
+        <pubDate>Thu, 29 Dec 2022 10:51:49 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E4%BD%B3%E8%83%BDm50%E6%80%8E%E4%B9%88%E4%B8%8Ac-log/</guid>
+        <description>&lt;p&gt;LOG作为一种对比RAW格式的妥协，在保证了文件大小不至于过大的同时，保证了一定程度的宽容度。但是佳能不这么想，对比起隔壁Sony全系S-LOG，佳能后知后觉的只在较新的顶配机型上加了自己的C-LOG功能。&lt;/p&gt;
+&lt;p&gt;为了尽可能达到这个效果，我们可以用相机里的自定义预设来模拟。相当于用调色来模仿C-LOG。实际上并没有提升。算是一个聊胜于无的功能吧。&lt;/p&gt;
+&lt;p&gt;总之只需要用EOS Utility连接相机。&lt;/p&gt;
+&lt;p&gt;在预设风格里面加载pf2或者是pf3文件就可以了，如果之前有过加预设滤镜那应该对这个步骤很熟。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.technicolor.com/cinestyle&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cinestyle Download | Technicolor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这里提供免费的C-LOG文件，网站里也有安装教程就不细说了（其实也说完了）。&lt;/p&gt;
+&lt;p&gt;体验上的话确实有点像正经用LOG那种灰蒙蒙的感觉，由于目前我也不拍视频，所以就不上对比了。说到底还是骗骗自己，获得一个白嫖的很少的提升。&lt;/p&gt;
+&lt;p&gt;Have fun.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
