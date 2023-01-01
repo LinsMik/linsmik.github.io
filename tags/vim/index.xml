@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Vim on 北山工坊</title>
+        <link>https://kitasuna.ml/tags/vim/</link>
+        <description>Recent content in Vim on 北山工坊</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 01 Jan 2023 18:53:30 +0800</lastBuildDate><atom:link href="https://kitasuna.ml/tags/vim/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>New</title>
+        <link>https://kitasuna.ml/post/%E9%AB%98%E6%95%88%E8%BE%93%E5%85%A5vim/</link>
+        <pubDate>Sun, 01 Jan 2023 18:53:30 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E9%AB%98%E6%95%88%E8%BE%93%E5%85%A5vim/</guid>
+        <description>&lt;p&gt;不得不说图形化在降低了计算机使用门槛的同时也降低了效率，如果一个系统可以只是用键盘作为输入工具，那么一定会省略下大量的将手移动到鼠标上，再转换到键盘上的时间。
+而这正是早期DOS系统以及目前大多数Linux及Unix发行版Terminal的使用方法。可以说这就是原汁原味的计算机使用。
+说到这里就不得不提一下这个极为高效的文字编辑软件Vim。&lt;/p&gt;
+&lt;p&gt;简要使用说明&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;移动光标 h向左 j向下 k向上 l向右
+当然你也可以使用方向键，更直观但是距离常用键位更远&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最主要的模式 需要注意在Vim中存在有几种模式，不同模式下对文字的编辑会有所不同，这一方面保护了编辑者不容易因为误触删除自己的成果，另一方面也提升了效率。第一种是普通模式，是你刚进入Vim时和按完ESC进入的模式。第二种是插入模式，一般出现在i,a或者r之后，这时Vim的状态很想平时使用的大多数编辑器比方说Word。第三种是视觉模式，在按下V后，此时移动光标会选中扫过的内容，有些类似用鼠标选中某一区域&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;退出Vim :q!会不保存退出，:wq会保存退出。需要注意Vim是大小写敏感的，开启大写后会进入不同的命令里&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正常模式下删除光标所在位置字符 x&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;添加文本 i在光标前添加文本，A在一行后添加文本。需要注意这样会进入insert模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除命令 dw删除一个单词 d$删除至行尾 dd删除整行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重复动作 在某个动作前加数字，比方说100j即为向下100行。常见格式为&lt;code&gt;operator [number] motion&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;移动光标到行首 0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;撤销操作 u，撤销一行中的改动U。撤销撤销命令ctrl-R（注意一定是大写）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新置入已删除的文本 p&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;替换 r，ce可以替换当前光标到单词末尾的内容，c$可以替换到行末&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常用命令1 ctrl-G显示目前所在位置和文件状态信息。G可以跳转至文件最后一行，如果是一个行号再G那就是那行行尾。gg跳转至首行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查找 &lt;code&gt;/&amp;lt;word&amp;gt;&lt;/code&gt; &lt;code&gt;?&amp;lt;word&amp;gt;&lt;/code&gt; 第一种是正向查找，第二种是反向查找，起点都是光标处。完成后n重复命令，N重复反方向命令。ctrl-O返回较旧的位置，ctrl-I去往较新的位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;匹配符号 在符号上按%可以匹配到对应的另一半上，主要指的就是()[]{}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;替换字符串&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一行内头一个&lt;code&gt;:s/old/new&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;一行内所有&lt;code&gt;:s/old/new/g&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;两行内所有&lt;code&gt;:#,#s/old/new/g&lt;/code&gt; #,#是首尾两行的行号&lt;/li&gt;
+&lt;li&gt;文件内所有&lt;code&gt;:%s/old/new/g&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全文替换且询问&lt;code&gt;:%s/old/new/gc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用外部命令 在命令前加&lt;code&gt;!&lt;/code&gt;即可。&lt;code&gt;:w &amp;lt;filename&amp;gt;&lt;/code&gt;可以把当前编辑的文件保存在你命名的文件夹中。&lt;code&gt;v motion :w &amp;lt;filename&amp;gt;&lt;/code&gt;这个是用视觉模式选中的保存方法。&lt;code&gt;:r &amp;lt;filename&amp;gt;&lt;/code&gt;提取某个文件并将其插入到文件光标位置后面。&lt;code&gt;:r !dir&lt;/code&gt;可以读取dir命令并输出到文件光标后面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常用命令2 o可以在光标下方打开新一行并进入插入模式，O可以在上方打开新的一行。a在光标后，A在行末。e光标移至行末。y复制，p粘贴。&lt;code&gt;:set xxx&lt;/code&gt;可选项有ic忽略字母大小写、is显示部分匹配、hls高亮匹配。也可以关闭，前面加no就行了，no喵&lt;code&gt;:set noic&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ctrl-W可在窗口间跳转&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vimrc可设置偏好，比方说语法高亮&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ctrl-D可以查看可能的补全结果，&lt;!-- raw HTML omitted --&gt;可以自动补全&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
