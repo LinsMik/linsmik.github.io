@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Git on 北山工坊</title>
+        <link>https://kitasuna.ml/tags/git/</link>
+        <description>Recent content in Git on 北山工坊</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 01 Jan 2023 15:14:07 +0800</lastBuildDate><atom:link href="https://kitasuna.ml/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>你应该学会——世界上最好的分布式版本控制工具Git</title>
+        <link>https://kitasuna.ml/post/%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%AD%A6%E4%BC%9A%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7git/</link>
+        <pubDate>Sun, 01 Jan 2023 15:14:07 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%AD%A6%E4%BC%9A%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7git/</guid>
+        <description>&lt;p&gt;Commit规范&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;用空行将正文与主体分开
+基本上就是总分的意思，有很多内容要提交的时候先主要的说一下这是在干嘛，然后空一行下面解释为什么要改动和改动的地方&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;限制到50个字符以内
+并不是强制要求，主要还是督促上传者精炼语句，提取关键信息，不过最多72个字符，因为在这之上commit会开始加&amp;hellip;省略后面的内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每句话首字母大写
+好看&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不要用句号给句子收尾
+commit作为一个空间很紧张的地方不要用这种方式浪费&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用强硬句式
+Git中的反馈信息都是使用这种命令句式的，比起普通的叙述句式更让人能一看看出修改的内容。用&lt;code&gt;Refactor subsystem X for readability&lt;/code&gt;取代&lt;code&gt;Fixed bug with Y&lt;/code&gt;，更不要在commit里面写意义不明的&lt;code&gt;More fixes for broken stuff&lt;/code&gt;，这种跟没写是一样的，根本起不到参考作用。
+如果不习惯的话就想想加上If applied,this commit will &lt;em&gt;do sth&lt;/em&gt;.后面的部分就是你应该写的commit。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主体部分使用少于72字符
+主要是会超出右边界&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用主体部分来解释什么和为什么，而不解释怎么样
+解释怎么样就太长太长了，这个应该是你写到技术博客里的东西，在commit里可读性太差了。一般来说代码自身的改变就解释了怎么变化的，如果特别复杂那也是应该在源码注释里面说明&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;命令行的Git比IDE里的Git更强大，多用命令行。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Pro Git电子书笔记
+只挑干的记&lt;/p&gt;
+&lt;p&gt;初始化仓库 &lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;克隆仓库 &lt;code&gt;git clone &amp;lt;url&amp;gt; (option file name)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;检查文件状态 &lt;code&gt;git status&lt;/code&gt;    加-s可以获得short版本的输出，??表示新文件，A代表暂存区文件，M代表修改过的文件，如果是MM是暂存后又修改了&lt;/p&gt;
+&lt;p&gt;跟踪文件 &lt;code&gt;git add &amp;lt;files&amp;gt;&lt;/code&gt;    这里需要注意每做一次更改都需要add一次，不然commit上去的就是你最后一次add的，而不是你的最新文件&lt;/p&gt;
+&lt;p&gt;忽略文件 &lt;code&gt;.gitignore&lt;/code&gt; 不需要更新的文件，比方说日志和编译文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;所有空行或者以 &lt;code&gt;#&lt;/code&gt; 开头的行都会被 Git 忽略。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以使用标准的 glob 模式匹配，它会递归地应用在整个工作区中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;匹配模式可以以（&lt;code&gt;/&lt;/code&gt;）开头防止递归。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;匹配模式可以以（&lt;code&gt;/&lt;/code&gt;）结尾指定目录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;要忽略指定模式以外的文件或目录，可以在模式前加上叹号（&lt;code&gt;!&lt;/code&gt;）取反。
+glob模式是一种简化的正则表达式
+所谓的 glob 模式是指 shell 所使用的简化了的正则表达式。 星号（&lt;code&gt;*&lt;/code&gt;）匹配零个或多个任意字符；&lt;code&gt;[abc]&lt;/code&gt; 匹配任何一个列在方括号中的字符 （这个例子要么匹配一个 a，要么匹配一个 b，要么匹配一个 c）； 问号（&lt;code&gt;?&lt;/code&gt;）只匹配一个任意字符；如果在方括号中使用短划线分隔两个字符， 表示所有在这两个字符范围内的都可以匹配（比如 &lt;code&gt;[0-9]&lt;/code&gt; 表示匹配所有 0 到 9 的数字）。 使用两个星号（&lt;code&gt;**&lt;/code&gt;）表示匹配任意中间目录，比如 &lt;code&gt;a/**/z&lt;/code&gt; 可以匹配 &lt;code&gt;a/z&lt;/code&gt; 、 &lt;code&gt;a/b/z&lt;/code&gt; 或 &lt;code&gt;a/b/c/z&lt;/code&gt; 等&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;查看已暂存和未暂存的修改 &lt;code&gt;git diff&lt;/code&gt;   和status差不多，但是这个能看到文件内部的更改。&lt;code&gt;git diff --staged&lt;/code&gt;可以查看已暂存文件和最后一次提交文件的差异。其本身只显示尚未add的改动&lt;/p&gt;
+&lt;p&gt;提交更新&lt;code&gt;git commit&lt;/code&gt;  使用-m后缀增加注释内容，跳过暂存可以使用-a后缀，可以直接提交所有跟踪的文件&lt;/p&gt;
+&lt;p&gt;移除文件 &lt;code&gt;git rm&lt;/code&gt;  从暂存区移除某个文件，移除后就不会再跟踪这个文件了，需要注意如果之前已经修改该或暂存过需要使用-f后缀强制删除。如果只想不跟踪而不在工作文件夹中删除这个文件使用&lt;code&gt;--cached&lt;/code&gt;，或者去.gitignore文件里面忽略。rm命令也可以使用glob模式，例如&lt;code&gt;git rm log/\*.log&lt;/code&gt;就是删除log文件夹下所有.log文件&lt;/p&gt;
+&lt;p&gt;移动文件&lt;code&gt;git mv file_from file_to&lt;/code&gt; 实际上是执行了复制，删除源文件，add新文件三条命令。不过git明白这相当于是一次重命名&lt;/p&gt;
+&lt;p&gt;查看提交历史 &lt;code&gt;git log&lt;/code&gt; 使用-p后缀可以看到每次提交的差异，也可以输入类似-2的后缀来限制输出最新的两次提交。&amp;ndash;stat显示统计信息。&amp;ndash;pretty==oneline 会显示把提交放在一行展示，另有short，full和fuller选项和format选项。&amp;ndash;graph会给你的命令行带一点符号来展示图形，稍微形象一些。也可以用&amp;ndash;since和&amp;ndash;until来限制时间，比方说&lt;code&gt;git log --since=2.weeks&lt;/code&gt; 或者使用&amp;ndash;author和&amp;ndash;grep这样来精细检索。还有一种过滤器-S，可以筛选出添加或删除了某个字符串的提交。e.g.&lt;code&gt;git log -S function_name&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;撤销操作 &lt;code&gt;git commit --amend&lt;/code&gt; 可以补上忘记添加的文件，如果没有，那也可以改提交信息，历史中也只会保存后来修改的提交&lt;/p&gt;
+&lt;p&gt;取消暂存的文件 &lt;code&gt;git reset &amp;lt;filename&amp;gt;&lt;/code&gt; 让某个文件离开暂存区，这是个危险的命令，尤其是在加上&amp;ndash;hard之后
+当然了也可以用&lt;code&gt;git checkout -- &amp;lt;file&amp;gt;&lt;/code&gt; ，Git会用最近提交的版本覆盖这个文件。需要注意的是在Git中可以被恢复的数据都是已提交的&lt;/p&gt;
+&lt;p&gt;查看远程仓库&lt;code&gt;git remote&lt;/code&gt; 会列出远程服务器的简写，origin会是默认名字&lt;/p&gt;
+&lt;p&gt;添加远程仓库&lt;code&gt;git remote add &amp;lt;shortname&amp;gt; &amp;lt;url&amp;gt;&lt;/code&gt;这样可以指定一个名字，这样以后可以用这个名字来代替链接&lt;/p&gt;
+&lt;p&gt;从远程仓库中抓取与拉取&lt;code&gt;git fetch &amp;lt;remote&amp;gt;&lt;/code&gt;这个命令只会下载数据，不会合并代码，而&lt;code&gt;git pull&lt;/code&gt;可以自动抓取后合并&lt;/p&gt;
+&lt;p&gt;推送到远程仓库&lt;code&gt;git push &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;&lt;/code&gt; 这个命令必须在之前没有人推送时才能起作用，也就是说更改过的版本你必须先fetch才能再push&lt;/p&gt;
+&lt;p&gt;查看某个远程仓库&lt;code&gt;git remote show &amp;lt;remote&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;远程仓库的重命名与移除&lt;code&gt;git remote rename&lt;/code&gt; 和&lt;code&gt;git remote remove&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;列出标签&lt;code&gt;git tag&lt;/code&gt; 可以显示出版本号&lt;/p&gt;
+&lt;p&gt;创建标签&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;附注标签 &lt;code&gt;git tag -a&lt;/code&gt; 如果后面不加-m的话Git会要求你写入指定信息&lt;/li&gt;
+&lt;li&gt;轻量标签 &lt;code&gt;git tag &amp;lt;version&amp;gt;&lt;/code&gt; 后面不加别的，只有版本信息&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;后期打标签 在末尾指定提交的校验和&lt;/p&gt;
+&lt;p&gt;共享标签&lt;code&gt;git push origin &amp;lt;tagname&amp;gt;&lt;/code&gt; push并不会默认上传标签，需要显式推送&lt;/p&gt;
+&lt;p&gt;删除标签 &lt;code&gt;git tag -d &amp;lt;tagname&amp;gt;&lt;/code&gt; 如果要删除远程标签的话&lt;code&gt;git push origin --delete &amp;lt;tagname&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;检出标签 &lt;code&gt;git checkout&lt;/code&gt; 这个还挺麻烦的，如果需要做更改的话需要创建新分支&lt;/p&gt;
+&lt;p&gt;Git别名，在config文件里面设置自动推断比方说&lt;code&gt;git config --global alias.ci commmit&lt;/code&gt; 可以用&lt;code&gt;git ci&lt;/code&gt;替代&lt;code&gt;git commit&lt;/code&gt;
+常用的有&lt;code&gt;git config --global alias.unstage &#39;reset HEAD --&#39;&lt;/code&gt;
+&lt;code&gt;git config --global alias.last &#39;log -l HEAD&#39;&lt;/code&gt;
+该命令可以看最后一次提交
+如果要写外部命令只要在命令前加！就可以替换了&lt;/p&gt;
+&lt;p&gt;分支创建&lt;code&gt;git branch &amp;lt;name&amp;gt;&lt;/code&gt; 这里需要注意一点，Git的分支都是以指针移动到对应快照上，并非创建新的副本&lt;/p&gt;
+&lt;p&gt;分支切换&lt;code&gt;git checkout &amp;lt;branch&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;删除分支&lt;code&gt;git branch -d &amp;lt;name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;冲突处理，在针对同一处位置的多个修改时不会触发fast-forwarding，也就是说Git不会帮你自动合并，需要你自己处理。在&lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/code&gt;和&lt;code&gt;=====&lt;/code&gt; 之间的是上半部分，和&lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;之间的是下半部分，这两部分是发生冲突的地方，需要进行处理，最后别忘了把这些符号也都删掉。解决完成后再add和commit就可以了&lt;/p&gt;
+&lt;p&gt;分支管理&lt;code&gt;git branch&lt;/code&gt; 会列出所有分支，&lt;code&gt;*&lt;/code&gt;代表目前所在分支。后缀加-v可以看到各个分支最后一次提交，&amp;ndash;merged可以看到已合并到当前分支的分支，&amp;ndash;no-merged则是未合并的，对于没星号已合并的分支可以直接删除，未合并的会报错，要删的话用-D&lt;/p&gt;
+&lt;p&gt;pull和fetch的区别，pull会自动merge，而fetch不会，它只是单纯的下载本地没有的数据&lt;/p&gt;
+&lt;p&gt;删除远程分支&lt;code&gt;git push origin --delete &amp;lt;branch&amp;gt;&lt;/code&gt; 会删除远程服务器上的这个分支指针，通常来说已删除的分支还会在服务器上保留一段时间，便于恢复&lt;/p&gt;
+&lt;p&gt;变基&lt;code&gt;rebase&lt;/code&gt; 将提交某一分支的所有更改移至另一分支
+&lt;img src=&#34;https://git-scm.com/book/en/v2/images/basic-rebase-3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+这样做的好处比起merge来说看起来更简洁（只有一条线，而不是变成树型，虽然某种意义上这个还是树型&amp;hellip;）
+反正就&amp;hellip;看图吧，实在不会用乖乖merge无非难看点
+&lt;img src=&#34;https://git-scm.com/book/en/v2/images/interesting-rebase-3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://git-scm.com/book/en/v2/images/interesting-rebase-4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://git-scm.com/book/en/v2/images/interesting-rebase-5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+需要注意&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果提交存在于你的仓库之外，而别人可能基于这些提交进行开发，那么不要执行变基。
+如果你遵循这条金科玉律，就不会出差错。 否则，人民群众会仇恨你，你的朋友和家人也会嘲笑你，唾弃你。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;想象一下就知道如果在多人开发中使用这种技巧很有可能导致别人开发的东西在一个已经被删除的分支上，而你们两个怎么也碰不到一起，因为你总要rebase。或者对方会在你的操作之间commit，天啊想想就是一场灾难&lt;/p&gt;
+&lt;p&gt;当然也有补救措施，但是考虑到这会给团队中的每个人带来大量的学习成本，而且我暂时也用不到，作为merge派我还是以后需要了再学吧&lt;/p&gt;
+&lt;p&gt;Git的四种协议，本地协议，HTTP协议，SSH协议，Git协议&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本地协议 最常用的，如果文件前指定file://会使用网络传输的进程，会降低效率
+优点是简单，如果设置过共享文件夹的话由于其分布式的特性会很方便。缺点是这个不一定快，比起那些有大量CDN服务器的网站来说。而且NFS访问一般也比SSH慢，而且每个成员都有完整的shell权限，如果被恶意破坏没有办法阻止&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP协议 有智能HTTP和哑HTTP之分，不关注了。好处是用着简单，高效且快，如果HTTPS的话还安全。缺点是服务器上架设麻烦。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SSH协议 这玩意不用介绍了吧。优点是简单、安全、高效。缺点是不支持匿名&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git协议 有点像是可以匿名的SSH，不过不需要限权完全没有安全措施。有点是这个是最快的。缺点是缺乏授权机制。常用的方法是开放Git协议但是只读，SSH或HTTPS协议用来给开发者写入权限。而且这个架设难度很高，需要开放9418端口，企业一般不会允许开放非标准端口&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;生成SSH公钥。公钥一般存在于&lt;code&gt;~/.ssh&lt;/code&gt;下，以id_dsa和id_rsa命名，带有.pub后缀的是公钥，另一个是私钥。如果没有就运行ssh-keygen命令生成。&lt;/p&gt;
+&lt;p&gt;后面是将怎么手动搭建自己的Git服务器的，我用不到，而且现在一般都用成熟的套件（GitLab）一步一步配置下来吧，有前端可以看。或者直接使用专业的托管网站比方说Github&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
