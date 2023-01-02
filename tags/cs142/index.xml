@@ -12,10 +12,8 @@
         <pubDate>Mon, 02 Jan 2023 20:54:15 +0800</pubDate>
         
         <guid>https://kitasuna.ml/post/cs142%E4%B8%AD%E7%9A%84css%E6%8A%80%E5%B7%A7/</guid>
-        <description>&lt;ol&gt;
-&lt;li&gt;CSS Flexible Box Layout
-Flex作为目前最推荐的排版方式，可谓是不得不掌握。而我的记忆还停留在用表格和float排版的年代，为什么我掌握的是这么古早的知识啊！&lt;/li&gt;
-&lt;/ol&gt;
+        <description>&lt;p&gt;CSS Flexible Box Layout
+Flex作为目前最推荐的排版方式，可谓是不得不掌握。而我的记忆还停留在用表格和float排版的年代，为什么我掌握的是这么古早的知识啊！&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;flex&lt;/code&gt; flex-grow、flex-shrink、flex-basis的简写，这玩意按照双值三值取才能用得到后面的，麻烦得要死就不管了&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;flex-basis&lt;/code&gt; 这个比width又更高的优先级，指示flex元素在主轴方向上的初始大小&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;flex-direction&lt;/code&gt; 指定内部元素在flex容器中的布局，定义主轴方向（正或者反）有&lt;code&gt;row row-reverse column column-reverse&lt;/code&gt;基本上就是字面意思&lt;/p&gt;
