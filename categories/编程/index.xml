@@ -6,7 +6,39 @@
         <description>Recent content in 编程 on 北山工坊</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 01 Jan 2023 18:53:30 +0800</lastBuildDate><atom:link href="https://kitasuna.ml/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 02 Jan 2023 20:54:15 +0800</lastBuildDate><atom:link href="https://kitasuna.ml/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CS142中的CSS技巧</title>
+        <link>https://kitasuna.ml/post/cs142%E4%B8%AD%E7%9A%84css%E6%8A%80%E5%B7%A7/</link>
+        <pubDate>Mon, 02 Jan 2023 20:54:15 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/cs142%E4%B8%AD%E7%9A%84css%E6%8A%80%E5%B7%A7/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;CSS Flexible Box Layout
+Flex作为目前最推荐的排版方式，可谓是不得不掌握。而我的记忆还停留在用表格和float排版的年代，为什么我掌握的是这么古早的知识啊！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;flex&lt;/code&gt; flex-grow、flex-shrink、flex-basis的简写，这玩意按照双值三值取才能用得到后面的，麻烦得要死就不管了&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-basis&lt;/code&gt; 这个比width又更高的优先级，指示flex元素在主轴方向上的初始大小&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-direction&lt;/code&gt; 指定内部元素在flex容器中的布局，定义主轴方向（正或者反）有&lt;code&gt;row row-reverse column column-reverse&lt;/code&gt;基本上就是字面意思&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-flow&lt;/code&gt; 是flex-direction和flex-wrap的简写，取值分别为row和nowrap&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-grow&lt;/code&gt; flex增长系数，分配剩余空间的比例&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-shrink&lt;/code&gt; flex收缩规则，可以理解为grow的反义词，数字越高占地越小&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-wrap&lt;/code&gt; 指定单行还是多行显示。nowrap表示摆放到一行，可能会溢出。wrap为多行，wrap-reverse多行且首尾互换&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;order&lt;/code&gt; 布局顺序，按照order的值递增布局&lt;/p&gt;
+&lt;p&gt;Flex Item为弹性容器的以及子元素&lt;/p&gt;
+&lt;p&gt;交叉轴指和设置的轴垂直方向的轴&lt;/p&gt;
+&lt;p&gt;预定义的flex值
+initial：0 1 auto
+auto：1 1 auto
+none：0 0 auto&lt;/p&gt;
+&lt;p&gt;align-items使元素在交叉轴对齐，默认为stretch，拉伸来填满。flex-start顶部对齐，flex-end下部对齐，center居中对齐&lt;/p&gt;
+&lt;p&gt;justify-content使元素在主轴上对齐，也是有stretch，flex-start，flex-end，center和space-around每个元素左右空间相等，space-between元素排列好后剩余空间平均分配到元素之间（不会在靠边的地方留空间）&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;对齐的实际用例&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Q:margin-left: auto 为什么可以使元素靠右?
+A:将 margin-left 设为 auto 后, &lt;strong&gt;元素左边的 margin 会被尽可能的撑大&lt;/strong&gt;, 所以自然就把元素挤到右边去了&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>高效输入——VIM</title>
         <link>https://kitasuna.ml/post/%E9%AB%98%E6%95%88%E8%BE%93%E5%85%A5vim/</link>
         <pubDate>Sun, 01 Jan 2023 18:53:30 +0800</pubDate>
