@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='又见到了奇怪的问题'>
-<title>解决部署在Github Pages上图片不显示的问题</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='要好好努力噢'>
+<title>2023-01-27</title>
 
-<link rel='canonical' href='https://kitasuna.ml/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/'>
+<link rel='canonical' href='https://kitasuna.ml/post/2023-01-27/'>
 
-<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='解决部署在Github Pages上图片不显示的问题'>
-<meta property='og:description' content='又见到了奇怪的问题'>
-<meta property='og:url' content='https://kitasuna.ml/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='2023-01-27'>
+<meta property='og:description' content='要好好努力噢'>
+<meta property='og:url' content='https://kitasuna.ml/post/2023-01-27/'>
 <meta property='og:site_name' content='北山工坊'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='疑难杂症' /><meta property='article:tag' content='实验' /><meta property='article:tag' content='网站设置' /><meta property='article:published_time' content='2022-12-22T19:18:26&#43;08:00'/><meta property='article:modified_time' content='2022-12-22T19:18:26&#43;08:00'/>
-<meta name="twitter:title" content="解决部署在Github Pages上图片不显示的问题">
-<meta name="twitter:description" content="又见到了奇怪的问题">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='有关北山的一切' /><meta property='article:published_time' content='2023-01-27T19:50:35&#43;08:00'/><meta property='article:modified_time' content='2023-01-27T19:50:35&#43;08:00'/>
+<meta name="twitter:title" content="2023-01-27">
+<meta name="twitter:description" content="要好好努力噢">
     <link rel="shortcut icon" href="/img/favicon.ico" />
 
     </head>
@@ -215,8 +215,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/debug/" >
-                Debug
+            <a href="/categories/%E6%97%A5%E8%AE%B0/" >
+                日记
             </a>
         
     </header>
@@ -224,12 +224,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/">解决部署在Github Pages上图片不显示的问题</a>
+            <a href="/post/2023-01-27/">2023-01-27</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            又见到了奇怪的问题
+            要好好努力噢
         </h3>
         
     </div>
@@ -250,7 +250,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Dec 22, 2022</time>
+                <time class="article-time--published">Jan 27, 2023</time>
             </div>
         
 
@@ -265,7 +265,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -287,16 +287,13 @@
     <section class="article-content">
     
     
-    <p>简单来说一句话，看看自己有没有配置config.toml里的baseUrl。如果没有的话自己每次引用的图片都是自己的域名/引用的域名，这样能找的到图片就有鬼了，肯定每次都报错404。</p>
-<p>我还因为这个问题头疼了两天，主要是搜也搜不到，估计是很蠢的问题，也没好意思提Issue去问。</p>
-<p>现在发现根源之后果然很蠢。主要是浏览器报错的error竟然是黄色的，在我的刻板印象里黄色的都是warning不用管的。</p>
-<p>后来想了想本地部署的可以显示，但是远程的不行，那我看看这个报的错有什么区别呗。一对比才找到问题。</p>
-<p>于是搜了下上面的<code>Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.</code></p>
-<p>找到了<a class="link" href="https://blog.csdn.net/DD_Davis/article/details/128101441"  target="_blank" rel="noopener"
-    >这个博客</a>就想起来前几天配置的时候为了方便不用老改CNAME，把Url删除空了，这样确实主页什么的改或者不改域名都能进了，但是图片引用上就寄了。真是服了。</p>
-<p>不过就算配置了baseUrl这个报错也不会消失，不过能用就行了我也不想管了。</p>
-<p><a class="link" href="https://stackoverflow.com/questions/72948207/error-with-permissions-policy-header-origin-trial-controlled-feature-not-enable"  target="_blank" rel="noopener"
-    >StackOverflow上面有说是router配置问题的</a>，反正大概就还是哪个地方没写明白地址的事吧。</p>
+    <p>好像隔了好几天没写日志了，这几天的计划完成的也不怎么样，每天过的还是挺浑浑噩噩的。感觉指定有数量的计划这件事确实很打击积极性。果然还是做到不想做为止吧，每天就规定下要做什么就好了</p>
+<p>今天午饭很糟糕但是晚饭相当不错，我妈做的面甚至让我觉得是外面面馆卖的那种水平了</p>
+<p>昨天通宵到4点打APEX，玩起来确实停不下来，虽然负反馈也挺强的，但是打完之后总想着接下来马上就是一个新的开始，马上就能干回来，说不定还能爆杀一波。感觉能驱使我熬夜玩的动力就在这里。这个想法过于强烈甚至超过了匹配到的队友九成都是弱智和大晚上不睡觉很困的负面感觉。而且游戏的节奏也挺快的，一直都能刺激自己的神经</p>
+<p>对比起学习来说首先这个事情不刺激，然后反馈的时间也长。很难说像玩游戏一样去学习吧。本身这个事情就是依靠长期练习获得收获的一个事件。从直觉上来说是反人性的。回想一下貌似觉得学习比较有趣的时候是生活里面只有学习，可以和很多人时不时进行排名的时候。这个时候考试甚至有点像抽卡，虽然学力可以短期内稍微改变，考试时的状态和出题的范围又很随机，等成绩出来又有点焦灼的心态显然是比自己闷头学更有意思</p>
+<p>现在做行测题只能硬着头皮刷，还是挺无聊的，很难说找到什么动力。只能说是尽力做了</p>
+<p>说起来写了这么些天的日记竟然抵触情绪不是很强。可能是因为做视频写文案动不动就一万字给练出来了。对于这种完全可以发散的文字自己写起来更没有压力</p>
+<p>但是为什么我就是不想做视频呢，明明这个也挺重要的。感觉或许是剪辑视频太麻烦了，要不就是觉得收益不高？但是其实这个播放量对于我这个粉丝数目来说算是相当不错了。呃，可能还是没有工作导致一直没有心思做这些事情吧。很难说放宽心去做。家里也没能给我提供这种比较放松的环境，我自己也调整不过来，有点麻烦呢</p>
 
 </section>
 
@@ -305,11 +302,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/">疑难杂症</a>
-        
-            <a href="/tags/%E5%AE%9E%E9%AA%8C/">实验</a>
-        
-            <a href="/tags/%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE/">网站设置</a>
+            <a href="/tags/%E6%9C%89%E5%85%B3%E5%8C%97%E5%B1%B1%E7%9A%84%E4%B8%80%E5%88%87/">有关北山的一切</a>
         
     </section>
 
@@ -343,12 +336,12 @@
             
                 
 <article class="">
-    <a href="/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E5%9B%9B/">
+    <a href="/post/2023-01-24/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">北山家的饭 其四</h2>
+            <h2 class="article-title">2023-01-24</h2>
         </div>
     </a>
 </article>
@@ -356,12 +349,12 @@
             
                 
 <article class="">
-    <a href="/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%89/">
+    <a href="/post/2023-01-23/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">北山家的饭 其三</h2>
+            <h2 class="article-title">2023-01-23</h2>
         </div>
     </a>
 </article>
@@ -369,12 +362,12 @@
             
                 
 <article class="">
-    <a href="/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%BA%8C/">
+    <a href="/post/2023-01-22/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">北山家的饭 其二</h2>
+            <h2 class="article-title">2023-01-22</h2>
         </div>
     </a>
 </article>
@@ -382,12 +375,25 @@
             
                 
 <article class="">
-    <a href="/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%80/">
+    <a href="/post/2023-01-21/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">北山家的饭 其一</h2>
+            <h2 class="article-title">2023-01-21</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/post/2023-01-20/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">2023-01-20</h2>
         </div>
     </a>
 </article>
