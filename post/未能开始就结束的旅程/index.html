@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='要记好多命令啊喂！'>
-<title>高效输入——VIM</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='说到底还是没钱'>
+<title>未能开始就结束的旅程</title>
 
-<link rel='canonical' href='https://kitasuna.ml/post/%E9%AB%98%E6%95%88%E8%BE%93%E5%85%A5vim/'>
+<link rel='canonical' href='https://kitasuna.ml/post/%E6%9C%AA%E8%83%BD%E5%BC%80%E5%A7%8B%E5%B0%B1%E7%BB%93%E6%9D%9F%E7%9A%84%E6%97%85%E7%A8%8B/'>
 
-<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='高效输入——VIM'>
-<meta property='og:description' content='要记好多命令啊喂！'>
-<meta property='og:url' content='https://kitasuna.ml/post/%E9%AB%98%E6%95%88%E8%BE%93%E5%85%A5vim/'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='未能开始就结束的旅程'>
+<meta property='og:description' content='说到底还是没钱'>
+<meta property='og:url' content='https://kitasuna.ml/post/%E6%9C%AA%E8%83%BD%E5%BC%80%E5%A7%8B%E5%B0%B1%E7%BB%93%E6%9D%9F%E7%9A%84%E6%97%85%E7%A8%8B/'>
 <meta property='og:site_name' content='北山工坊'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Vim' /><meta property='article:tag' content='实验' /><meta property='article:tag' content='工具' /><meta property='article:published_time' content='2023-01-01T18:53:30&#43;08:00'/><meta property='article:modified_time' content='2023-01-01T18:53:30&#43;08:00'/>
-<meta name="twitter:title" content="高效输入——VIM">
-<meta name="twitter:description" content="要记好多命令啊喂！">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='有关北山的一切' /><meta property='article:published_time' content='2023-01-29T17:11:15&#43;08:00'/><meta property='article:modified_time' content='2023-01-29T17:11:15&#43;08:00'/>
+<meta name="twitter:title" content="未能开始就结束的旅程">
+<meta name="twitter:description" content="说到底还是没钱">
     <link rel="shortcut icon" href="/img/favicon.ico" />
 
     </head>
@@ -215,8 +215,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E7%BC%96%E7%A8%8B/" >
-                编程
+            <a href="/categories/%E6%97%A5%E8%AE%B0/" >
+                日记
             </a>
         
     </header>
@@ -224,12 +224,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/post/%E9%AB%98%E6%95%88%E8%BE%93%E5%85%A5vim/">高效输入——VIM</a>
+            <a href="/post/%E6%9C%AA%E8%83%BD%E5%BC%80%E5%A7%8B%E5%B0%B1%E7%BB%93%E6%9D%9F%E7%9A%84%E6%97%85%E7%A8%8B/">未能开始就结束的旅程</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            要记好多命令啊喂！
+            说到底还是没钱
         </h3>
         
     </div>
@@ -250,7 +250,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jan 01, 2023</time>
+                <time class="article-time--published">Jan 29, 2023</time>
             </div>
         
 
@@ -265,7 +265,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -287,80 +287,11 @@
     <section class="article-content">
     
     
-    <p>不得不说图形化在降低了计算机使用门槛的同时也降低了效率，如果一个系统可以只是用键盘作为输入工具，那么一定会省略下大量的将手移动到鼠标上，再转换到键盘上的时间。
-而这正是早期DOS系统以及目前大多数Linux及Unix发行版Terminal的使用方法。可以说这就是原汁原味的计算机使用。
-说到这里就不得不提一下这个极为高效的文字编辑软件Vim。</p>
-<p>简要使用说明</p>
-<ul>
-<li>
-<p>移动光标 h向左 j向下 k向上 l向右
-当然你也可以使用方向键，更直观但是距离常用键位更远</p>
-</li>
-<li>
-<p>最主要的模式 需要注意在Vim中存在有几种模式，不同模式下对文字的编辑会有所不同，这一方面保护了编辑者不容易因为误触删除自己的成果，另一方面也提升了效率。第一种是普通模式，是你刚进入Vim时和按完ESC进入的模式。第二种是插入模式，一般出现在i,a或者r之后，这时Vim的状态很想平时使用的大多数编辑器比方说Word。第三种是视觉模式，在按下V后，此时移动光标会选中扫过的内容，有些类似用鼠标选中某一区域</p>
-</li>
-<li>
-<p>退出Vim :q!会不保存退出，:wq会保存退出。需要注意Vim是大小写敏感的，开启大写后会进入不同的命令里</p>
-</li>
-<li>
-<p>正常模式下删除光标所在位置字符 x</p>
-</li>
-<li>
-<p>添加文本 i在光标前添加文本，A在一行后添加文本。需要注意这样会进入insert模式</p>
-</li>
-<li>
-<p>删除命令 dw删除一个单词 d$删除至行尾 dd删除整行</p>
-</li>
-<li>
-<p>重复动作 在某个动作前加数字，比方说100j即为向下100行。常见格式为<code>operator [number] motion</code></p>
-</li>
-<li>
-<p>移动光标到行首 0</p>
-</li>
-<li>
-<p>撤销操作 u，撤销一行中的改动U。撤销撤销命令ctrl-R（注意一定是大写）</p>
-</li>
-<li>
-<p>重新置入已删除的文本 p</p>
-</li>
-<li>
-<p>替换 r，ce可以替换当前光标到单词末尾的内容，c$可以替换到行末</p>
-</li>
-<li>
-<p>常用命令1 ctrl-G显示目前所在位置和文件状态信息。G可以跳转至文件最后一行，如果是一个行号再G那就是那行行尾。gg跳转至首行</p>
-</li>
-<li>
-<p>查找 <code>/&lt;word&gt;</code> <code>?&lt;word&gt;</code> 第一种是正向查找，第二种是反向查找，起点都是光标处。完成后n重复命令，N重复反方向命令。ctrl-O返回较旧的位置，ctrl-I去往较新的位置</p>
-</li>
-<li>
-<p>匹配符号 在符号上按%可以匹配到对应的另一半上，主要指的就是()[]{}</p>
-</li>
-<li>
-<p>替换字符串</p>
-<ul>
-<li>一行内头一个<code>:s/old/new</code></li>
-<li>一行内所有<code>:s/old/new/g</code></li>
-<li>两行内所有<code>:#,#s/old/new/g</code> #,#是首尾两行的行号</li>
-<li>文件内所有<code>:%s/old/new/g</code></li>
-<li>全文替换且询问<code>:%s/old/new/gc</code></li>
-</ul>
-</li>
-<li>
-<p>使用外部命令 在命令前加<code>!</code>即可。<code>:w &lt;filename&gt;</code>可以把当前编辑的文件保存在你命名的文件夹中。<code>v motion :w &lt;filename&gt;</code>这个是用视觉模式选中的保存方法。<code>:r &lt;filename&gt;</code>提取某个文件并将其插入到文件光标位置后面。<code>:r !dir</code>可以读取dir命令并输出到文件光标后面</p>
-</li>
-<li>
-<p>常用命令2 o可以在光标下方打开新一行并进入插入模式，O可以在上方打开新的一行。a在光标后，A在行末。e光标移至行末。y复制，p粘贴。<code>:set xxx</code>可选项有ic忽略字母大小写、is显示部分匹配、hls高亮匹配。也可以关闭，前面加no就行了，no喵<code>:set noic</code></p>
-</li>
-<li>
-<p>ctrl-W可在窗口间跳转</p>
-</li>
-<li>
-<p>vimrc可设置偏好，比方说语法高亮</p>
-</li>
-<li>
-<p>ctrl-D可以查看可能的补全结果，<!-- raw HTML omitted -->可以自动补全</p>
-</li>
-</ul>
+    <p>今天上午去打了第四针新冠疫苗，说是打针其实是吸入式的。感觉有点甜味。医生说憋气五秒我好像时间不是很够，因为昨天一两点才睡的，大早上脑子并不清醒。反应的话大概是呼吸道有点不舒服，想咳嗽。想想这个是黏膜吸收的看起来应该是起了点作用</p>
+<p>中午我妈说让我出去旅行，我被关在家一个多月快要闷自闭了，欣然答应。准备明天出发去省会逛漫展，后天再参观一下当地的寺庙。做了一下午的旅行计划。最后合计了一下两天的行程就要600块了（包括吃住门票车票）。虽然按理说不是很贵，而且因为天数少所以车票比重比较大。但是还是震惊到我了。惊讶之余去知乎搜了下降低成本的方法，不是坐火车硬座就是住50块的青年旅馆。对于我来说这些都不是我愿意降低旅行质量的地方。后来看到一个叫 全年旅行的人靠什么维生 的问题才反应过来。旅行这事就是一个纯粹的消费行为，它真的就是出去纯花钱的。如果你要什么所谓的穷游那真的没什么体验的。旅游对于我来说就是出去玩的，什么磨练身心啊，我平时已经被磨练的很不舒服了。顺理成章地这次旅行就被我放弃掉了。在这种没有收入的情况下我很难放开心去玩的（当家教挣得不算）。即使过年我妈给了我一笔相当丰厚的压岁钱我还是很难接受按照这个速度花钱</p>
+<p>说完了旅行，来聊聊日记的事。日记按照日期做标题可太难看了。我要被自己的主页丑到了。决定用之前的副标题来写。而且也不会天天写了，啥时候想起来再说吧，因为最近不是很喜欢把自己的想法说给其他人听，所以多半日记还是会经常有的</p>
+<p>噢对了，昨天前天通关了《师父》，非常好的游戏。法国人在电子游戏上对于传统文化的传播比中国人做的还好，很离谱。尤其是对于武德这个很有儒家味道的词解释的非常地道，不愧是正儿八经学过白眉拳的制作人。美术上就更成功了，准备做个实况发到小号上</p>
+<p>前天看了《实习生》，是一个节奏很好很温馨的故事。值得一看</p>
 
 </section>
 
@@ -369,11 +300,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/vim/">Vim</a>
-        
-            <a href="/tags/%E5%AE%9E%E9%AA%8C/">实验</a>
-        
-            <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>
+            <a href="/tags/%E6%9C%89%E5%85%B3%E5%8C%97%E5%B1%B1%E7%9A%84%E4%B8%80%E5%88%87/">有关北山的一切</a>
         
     </section>
 
@@ -407,12 +334,12 @@
             
                 
 <article class="">
-    <a href="/post/%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%AD%A6%E4%BC%9A%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7git/">
+    <a href="/post/2023-01-27/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">你应该学会——世界上最好的分布式版本控制工具Git</h2>
+            <h2 class="article-title">2023-01-27</h2>
         </div>
     </a>
 </article>
@@ -420,12 +347,12 @@
             
                 
 <article class="">
-    <a href="/post/%E5%9C%A8word%E4%B8%AD%E8%B0%83%E5%87%BA%E6%89%8B%E5%86%99%E6%95%88%E6%9E%9C/">
+    <a href="/post/2023-01-24/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">在Word中调出手写效果</h2>
+            <h2 class="article-title">2023-01-24</h2>
         </div>
     </a>
 </article>
@@ -433,12 +360,12 @@
             
                 
 <article class="">
-    <a href="/post/%E4%BD%B3%E8%83%BDm50%E6%80%8E%E4%B9%88%E4%B8%8Ac-log/">
+    <a href="/post/2023-01-23/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">佳能M50怎么上C-LOG</h2>
+            <h2 class="article-title">2023-01-23</h2>
         </div>
     </a>
 </article>
@@ -446,12 +373,12 @@
             
                 
 <article class="">
-    <a href="/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/">
+    <a href="/post/2023-01-22/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">解决部署在Github Pages上图片不显示的问题</h2>
+            <h2 class="article-title">2023-01-22</h2>
         </div>
     </a>
 </article>
@@ -459,12 +386,12 @@
             
                 
 <article class="">
-    <a href="/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E5%9B%9B/">
+    <a href="/post/2023-01-21/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">北山家的饭 其四</h2>
+            <h2 class="article-title">2023-01-21</h2>
         </div>
     </a>
 </article>
